@@ -176,12 +176,116 @@ textarea {
 		font-size: 3rem;
 	}
 
+	/* ---------------> barra */
+    .barra{
+        background-color: #353535;
+        padding: 3rem;
+    }
 
+   
+    .barra > .contenedor{
+        display: flex;
+        justify-content: space-around;
+        align-items:center;
+        flex-wrap: wrap;
+    }
+    
+    .contenedor > .logo{
+        flex-basis: 40%;
+    }
 
+    @media (min-width: 768px ){
+        .contenedor > .logo{
+            flex-basis: 20%;
+        }
+    }
+    
+    /* -------------> MENU PRINCIPAL */
+       
+    /* .navegacion-principal > a{
+        display: none;
+    } */
 
+    
+    .navegacion-principal > a{
+        display: block;
+        text-decoration: none;
+        text-transform: uppercase;
+        margin-right: 2.6rem;
+        font-size: 2rem;
+        font-family: 'Oswald', sans-serif;
+        color: #fff;
+        transition: all .6s;
+        width: 100%;
+        text-align: center;
 
+    }
 
+    .navegacion-principal > a:hover{
+        color: #fe4918;
+    }
 
+    .navegacion-principal > a:last-child{
+        border: 0.2rem solid  #fe4918;
+        color:  #fe4918;
+        padding: 1rem 2rem;
+    }
+
+    .navegacion-principal > a:last-child:hover{
+        color: #fff;
+    }
+
+    @media (min-width: 768px){
+        .menu-mobile{
+            display: none;
+           
+        }
+    }
+  /* -------------->MENU MOBILE */
+
+    .menu-mobile{
+    width: 4rem;
+    height: 4rem;
+    display: block;
+    background-image: url(../img/menu-hamburger-svgrepo-com.svg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    
+    }
+
+    .menu-mobile:hover{
+        cursor: pointer;
+    }
+    .menu-mobile > span{
+        width: 1rem;
+        background-color: #fff;
+        display: block;
+    }
+
+    @media (min-width: 768px){
+        .menu-mobile{
+            display: none;
+        }
+
+        .navegacion-principal > a{
+            display: inline-block;
+            text-decoration: none;
+            text-transform: uppercase;
+            margin-right: 2.6rem;
+            font-size: 2rem;
+            font-family: 'Oswald', sans-serif;
+            color: #fff;
+            transition: all .6s;
+            width: auto;
+            
+    
+        }
+    }   
+
+   
+ 
+    
 
 /* ==========================================================================
    Helper classes
