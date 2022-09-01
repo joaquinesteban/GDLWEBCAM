@@ -1,0 +1,97 @@
+// GLOBALES
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    // overflow-x: hidden;
+}
+
+html{
+    font-size: 62.5%;
+}
+
+// MIXIN
+
+@mixin contenedor{
+    background-color: red;
+    width: 96%;
+    margin: 0 auto;
+}
+//terminar con barra de navegacion y ver como hacerlo reponsive
+
+// HEADER
+header{
+    
+    height: 100vh;
+    background-image: url(../img/encabezado.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+
+    .hero{
+        
+        
+        .contenido-header{
+            color: #fff;
+            text-align: center;
+            padding: 2rem;
+
+            .nombre-sitio{
+                font-size: 12rem;
+                text-transform: uppercase;
+                margin: 0;
+            }
+
+            .slogan{
+                font-size: 2rem;
+                text-transform: lowercase;
+
+                span{
+                    font-size: 2.2rem;
+                    font-weight: bold;
+                }
+            }
+
+           .redes-sociales{
+                text-align: center;
+                font-size: 2.2rem;
+                a{
+                    color: #fff;
+                    text-decoration: none;
+                    padding-right: 1rem;
+                }
+           }
+
+           .informacion-evento{
+                margin-top: 5rem;
+                display: flex;
+                justify-content:space-evenly;
+
+                p{
+                    color: #fff;
+                    font-size: 1.8rem;
+
+                    i{
+                        color: rgb(207, 32, 32);
+                        font-size: 2.6rem;
+                        margin-right: 1rem;
+                    }
+                }
+           }
+           
+           
+        }
+
+        @include contenedor()
+
+    }
+}
+
+.barra{
+     @include contenedor()
+}
+
+.descripcion{
+     @include contenedor()
+}
