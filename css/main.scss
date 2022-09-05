@@ -40,22 +40,9 @@ header{
             text-align: center;
             padding: 2rem;
 
-            .nombre-sitio{
-                font-size: 12rem;
-                font-family: 'Open Sans', sans-serif;
-                text-transform: uppercase;
-                margin: 0;
-            }
+           
 
-            .slogan{
-                font-size: 2rem;
-                text-transform: lowercase;
-
-                span{
-                    font-size: 2.2rem;
-                    font-weight: bold;
-                }
-            }
+            
 
            .redes-sociales{
                 text-align: center;
@@ -69,17 +56,47 @@ header{
 
            .informacion-evento{
                 margin-top: 5rem;
-                display: flex;
-                justify-content:space-evenly;
+                // display: flex;
+                // flex-direction: column;
+                // justify-content:space-evenly;
 
-                p{
-                    color: #fff;
-                    font-size: 1.8rem;
+                .icons{
 
-                    i{
-                        color: rgb(207, 32, 32);
-                        font-size: 2.6rem;
-                        margin-right: 1rem;
+                    display:flex ;
+                    justify-content: space-evenly;
+                    p{
+                        color: #fff;
+                        font-size: 1.8rem;
+                        text-align: center;
+                        display: inline-block;
+                        
+                        
+                       
+    
+                        i{
+                            color: rgb(207, 32, 32);
+                            font-size: 2.6rem;
+                            margin-right: 1rem;
+                        }
+                    }
+    
+                }
+
+                .nombre-sitio{
+                    display: inline-block;
+                    font-size: 10vw;
+                    font-family: 'Open Sans', sans-serif;
+                    text-transform: uppercase;
+                    margin: 0;
+                }
+                
+                .slogan{
+                    font-size: 2rem;
+                    text-transform: lowercase;
+    
+                    span{
+                        font-size: 2.2rem;
+                        font-weight: bold;
                     }
                 }
            }
@@ -97,6 +114,7 @@ header{
     .contenedor{
         display: flex;
         justify-content: space-between;
+        flex-wrap: wrap;
         align-items: center;
         padding: 2rem;
 
@@ -107,12 +125,38 @@ header{
                 max-width: 30rem;
             }
         }
+        // -----------------------MENU MOBILE
+
+        .menu-mobile{
+            width: 6rem;
+            display:block;
+            text-align: right;
+            margin-top: 1.2rem;
+
+            &:hover{
+                cursor: pointer;
+            }
+
+            span{
+               height: 0.8rem; 
+               margin-bottom: 0.6rem;
+               background-color: #f2f2f2;
+               display: block;
+
+            }
+
+            @media (min-width: 768px){
+                display: none;
+            }
+        }
+
 
         .navegacion-principal{
             
             
 
-            a{
+            a{  
+               
                 text-decoration: none;
                 text-transform: uppercase;
                 margin-right: 3rem;
@@ -123,6 +167,7 @@ header{
                 &:last-child{
                     color:#fff;
                     border: 3px solid #fe4918;
+                    margin: 0;
                     padding: 2rem;
                 }
 
@@ -131,29 +176,60 @@ header{
                     padding: 1rem;
                     transition: 0.8s;
                 }  
-                
+
+               
             }
-        
+                
+            
+            @media (max-width: 768px){
+                display: block;
+                text-align: center;
+            }
         }
         @include contenedor()
+    }
+
+    @media (max-width: 768px){
+        .logo{
+            margin: 0 auto;
+           
+        }
     }
     
 }
 
 .descripcion{
     height: 40rem;
+
+
     h2{
-        // font-family: 'Open Sans', sans-serif;
-        font-size: 3rem;
+        font-family: 'Oswald', sans-serif;
+        font-size: 4rem;
         text-transform: uppercase;
         text-align: center;
         padding: 2rem 0;
-        margin-top: 2rem;
+        margin-top: 4rem;
     }
+
+    h2::after{
+        content: '';
+        display: block;
+        width: 8rem;
+        height: 3rem;
+        margin: 0 auto;
+        background-image: url(../img/separador.png);
+        background-repeat: no-repeat;
+        background-position: center;
+        background-size: cover;
+    }
+
 
     p{
         font-size: 1.8rem;
         text-align: center;
+        line-height: 3rem;
     }
     @include contenedor()
 }
+
+
