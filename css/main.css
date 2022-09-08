@@ -109,12 +109,12 @@ header {
       margin: 0 auto; } }
 
 .descripcion {
-  height: 40rem;
+  height: 30rem;
   width: 96%;
   margin: 0 auto; }
   .descripcion h2 {
-    font-family: 'Oswald', sans-serif;
     font-size: 4rem;
+    font-family: 'Oswald', sans-serif;
     text-transform: uppercase;
     text-align: center;
     padding: 2rem 0;
@@ -133,5 +133,96 @@ header {
     font-size: 1.8rem;
     text-align: center;
     line-height: 3rem; }
+
+.programa {
+  position: relative; }
+  .programa .contenedor-video {
+    max-width: 100%; }
+    .programa .contenedor-video video {
+      margin-top: 3rem;
+      overflow-x: hidden; }
+      @media (min-width: 768px) {
+        .programa .contenedor-video video {
+          width: 100%; } }
+  .programa .contenido-programa {
+    position: absolute;
+    top: 12rem;
+    left: 4rem;
+    width: 100%;
+    height: 100%; }
+    .programa .contenido-programa .contenedor {
+      width: 80%;
+      height: auto;
+      margin: 0 auto;
+      padding-bottom: 3.4rem;
+      background-color: rgba(237, 231, 231, 0.537); }
+      .programa .contenido-programa .contenedor .programa-evento {
+        padding: 1.5rem; }
+        .programa .contenido-programa .contenedor .programa-evento h2 {
+          font-size: 3rem;
+          font-family: 'Oswald', sans-serif;
+          text-transform: uppercase;
+          text-align: center;
+          padding: 2rem 0;
+          margin-top: 4rem; }
+        .programa .contenido-programa .contenedor .programa-evento h2::after {
+          content: '';
+          display: block;
+          width: 8rem;
+          height: 3rem;
+          margin: 0 auto;
+          background-image: url(../img/separador.png);
+          background-repeat: no-repeat;
+          background-position: center;
+          background-size: cover; }
+        .programa .contenido-programa .contenedor .programa-evento .menu-programa {
+          display: flex;
+          justify-content: space-between;
+          width: 100%;
+          border-bottom: 1px solid #fe4918;
+          padding: 1rem; }
+          .programa .contenido-programa .contenedor .programa-evento .menu-programa a {
+            text-align: center;
+            text-decoration: none;
+            color: #000;
+            font-family: 'Oswald', sans-serif;
+            font-size: 2.2rem; }
+            .programa .contenido-programa .contenedor .programa-evento .menu-programa a i {
+              font-size: 2.3rem;
+              color: #fe4918;
+              margin-right: 0.5rem; }
+          @media (min-width: 768px) {
+            .programa .contenido-programa .contenedor .programa-evento .menu-programa {
+              display: table-cell; } }
+      .programa .contenido-programa .contenedor .info-curso {
+        padding: 3rem; }
+        .programa .contenido-programa .contenedor .info-curso .detalle-evento h3 {
+          font-size: 2rem;
+          margin-bottom: 1rem;
+          color: #fe4918; }
+        .programa .contenido-programa .contenedor .info-curso .detalle-evento p {
+          font-size: 1.6rem;
+          margin-bottom: 1rem; }
+          .programa .contenido-programa .contenedor .info-curso .detalle-evento p i {
+            color: #fe4918;
+            font-size: 2.6rem;
+            margin-right: 1rem; }
+      .programa .contenido-programa .contenedor .button {
+        color: #f2f2f2;
+        background-color: #fe4918;
+        font-size: 2rem;
+        padding: 0.8rem;
+        margin-top: 1rem;
+        margin-bottom: 2rem;
+        float: right;
+        text-decoration: none;
+        text-transform: uppercase; }
+        .programa .contenido-programa .contenedor .button:hover {
+          background-color: #92290c;
+          transition: 1s; }
+      @media (min-width: 768px) {
+        .programa .contenido-programa .contenedor {
+          width: 30%;
+          margin: 0; } }
 
 /*# sourceMappingURL=main.css.map */
