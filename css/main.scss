@@ -6,7 +6,6 @@
     box-sizing: border-box;
     
     
-    
 }
 
 html{
@@ -43,6 +42,12 @@ body{
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
+}
+
+@mixin lista{
+    list-style: none;
+    padding: 0;
+    margin: 0;
 }
 
 
@@ -251,6 +256,7 @@ header{
     .contenedor-video{
         max-width: 100%;
        
+       
 
         video{
             margin-top: 3rem;
@@ -258,6 +264,7 @@ header{
 
             @media (min-width: 768px){
                 width: 100%;
+                
             }
 
         }
@@ -378,12 +385,84 @@ header{
             }
 
         }  
+        @include contenedor()
     }
 
 
 
-
+   
 
 }
 
 
+// SECCION INVITADO
+
+.invitado{
+    h2{
+        font-size: 4rem;
+        @include titulo()
+    }
+    
+    h2::after{
+        @include separador()
+    }
+   
+    ul{
+        display: flex;
+        justify-content: center;
+        flex-wrap: wrap; 
+        padding: 10rem;
+
+
+        li{
+       
+
+            .invitado{
+                width: 80%;
+                position: relative;
+               
+                
+                
+                // mejorar esta parte de la seccion, no se muestra bien el efecto
+
+                img{
+                    width: 98%;
+                    margin-bottom: 3rem;
+                    filter:grayscale(1);
+                    transition: all 2s ease-in-out;
+                    
+                }
+
+                img:hover{
+                    filter: grayscale(0);
+                    transform: scale(1.1);
+                }
+
+              p{
+                font-size: 2rem;
+                font-family: 'Oswald', sans-serif;
+                text-transform: uppercase;
+                color: #fe4918;
+                background-color: rgba(0, 0, 0, 0.55);
+                padding: 2.2rem;
+                width: 98%;
+                position: absolute;
+                bottom: 3.2rem;
+                left: 0;
+                transition: all 1s ease-in-out;
+              }
+
+              p:hover{
+                transition: margin-botom 1s ease-in-out;
+                opacity: 0;
+                
+              }
+            }
+        }
+        @include lista()
+    }
+    
+      
+
+    @include contenedor()
+}
