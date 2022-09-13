@@ -227,59 +227,61 @@ header {
           width: 30%;
           margin: 0; } }
 
-.invitado {
+.invitado h2 {
+  font-size: 4rem;
+  font-family: 'Oswald', sans-serif;
+  text-transform: uppercase;
+  text-align: center;
+  padding: 2rem 0;
+  margin-top: 4rem; }
+.invitado h2::after {
+  content: '';
+  display: block;
+  width: 8rem;
+  height: 3rem;
+  margin: 0 auto;
+  background-image: url(../img/separador.png);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover; }
+.invitado ul {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  padding: 10rem;
+  list-style: none;
+  padding: 0;
+  margin: 0; }
+  .invitado ul li .invitado {
+    width: 80%;
+    max-height: 28rem;
+    margin: 0 auto 3rem auto;
+    position: relative;
+    overflow: hidden; }
+    .invitado ul li .invitado img {
+      max-width: 100%;
+      filter: grayscale(1);
+      transition: all .5s ease-in-out; }
+    .invitado ul li .invitado img:hover {
+      filter: grayscale(0);
+      transform: scale(1.1); }
+    .invitado ul li .invitado p {
+      position: absolute;
+      bottom: 0;
+      left: 0;
+      margin: 0;
+      padding: 1.5rem 1.5rem;
+      background-color: rgba(0, 0, 0, 0.55);
+      color: #fe4918;
+      width: 100%;
+      text-align: left;
+      font-size: 2rem;
+      font-family: 'Oswald', sans-serif;
+      text-transform: uppercase;
+      transition: all .5s ease-in-out; }
+
+.contador .contenedor .resumen-evento ul {
   width: 96%;
   margin: 0 auto; }
-  .invitado h2 {
-    font-size: 4rem;
-    font-family: 'Oswald', sans-serif;
-    text-transform: uppercase;
-    text-align: center;
-    padding: 2rem 0;
-    margin-top: 4rem; }
-  .invitado h2::after {
-    content: '';
-    display: block;
-    width: 8rem;
-    height: 3rem;
-    margin: 0 auto;
-    background-image: url(../img/separador.png);
-    background-repeat: no-repeat;
-    background-position: center;
-    background-size: cover; }
-  .invitado ul {
-    display: flex;
-    justify-content: center;
-    flex-wrap: wrap;
-    padding: 10rem;
-    list-style: none;
-    padding: 0;
-    margin: 0; }
-    .invitado ul li .invitado {
-      width: 80%;
-      position: relative; }
-      .invitado ul li .invitado img {
-        width: 98%;
-        margin-bottom: 3rem;
-        filter: grayscale(1);
-        transition: all 2s ease-in-out; }
-      .invitado ul li .invitado img:hover {
-        filter: grayscale(0);
-        transform: scale(1.1); }
-      .invitado ul li .invitado p {
-        font-size: 2rem;
-        font-family: 'Oswald', sans-serif;
-        text-transform: uppercase;
-        color: #fe4918;
-        background-color: rgba(0, 0, 0, 0.55);
-        padding: 2.2rem;
-        width: 98%;
-        position: absolute;
-        bottom: 3.2rem;
-        left: 0;
-        transition: all 1s ease-in-out; }
-      .invitado ul li .invitado p:hover {
-        transition: margin-botom 1s ease-in-out;
-        opacity: 0; }
 
 /*# sourceMappingURL=main.css.map */
