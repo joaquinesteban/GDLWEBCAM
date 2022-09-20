@@ -280,9 +280,6 @@ header {
       text-transform: uppercase;
       transition: all .5s ease-in-out; }
 
-.contador::before {
-  content: ''; }
-
 .contador {
   width: 100%;
   height: 50rem;
@@ -472,7 +469,6 @@ header {
   width: 100%;
   height: auto;
   position: relative;
-  margin-bottom: 30rem;
   font-family: 'lato' sans-serif; }
   .newsletter .background {
     width: 100%;
@@ -509,5 +505,104 @@ header {
     .newsletter .contenido .button:hover {
       background-color: #fe4918;
       transition: all  1s ease; }
+
+.relog {
+  width: 100%;
+  height: 40rem;
+  position: relative; }
+  .relog h3 {
+    font-size: 4rem;
+    font-family: 'Oswald', sans-serif;
+    text-transform: uppercase;
+    text-align: center;
+    padding: 2rem 0;
+    margin-top: 4rem; }
+  .relog h3::after {
+    content: '';
+    display: block;
+    width: 8rem;
+    height: 3rem;
+    margin: 0 auto;
+    background-image: url(../img/separador.png);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover; }
+  .relog .cuenta-regresiva {
+    position: absolute;
+    top: 4.5rem;
+    left: 2rem;
+    width: 96%;
+    margin: 0 auto; }
+    .relog .cuenta-regresiva .time {
+      padding: 8rem;
+      margin-bottom: 4rem;
+      display: flex;
+      justify-content: space-between; }
+      .relog .cuenta-regresiva .time li {
+        width: 100%;
+        font-size: 2rem;
+        font-weight: bold;
+        text-align: center;
+        text-transform: uppercase;
+        list-style: none;
+        color: #000;
+        font-size: 2.4rem;
+        font-family: 'Oswald',sans-serif; }
+        @media (min-width: 768px) {
+          .relog .cuenta-regresiva .time li {
+            width: 50%; } }
+        .relog .cuenta-regresiva .time li .numero {
+          display: block;
+          margin-bottom: 3rem;
+          font-size: 10rem;
+          color: #fe4918; }
+
+.site-footer {
+  width: 100%;
+  height: auto;
+  background-color: #353535;
+  padding-top: 2rem; }
+  .site-footer .contenedor {
+    display: flex;
+    justify-content: space-between;
+    width: 96%;
+    margin: 0 auto; }
+    .site-footer .contenedor .informacion,
+    .site-footer .contenedor .redes-sociales,
+    .site-footer .contenedor .menu {
+      width: 40rem;
+      font-size: 1.2rem;
+      font-family: 'Lato',sans-serif;
+      line-height: 3rem;
+      padding: 0 2rem;
+      color: #fff; }
+      .site-footer .contenedor .informacion h3,
+      .site-footer .contenedor .redes-sociales h3,
+      .site-footer .contenedor .menu h3 {
+        font-size: 1.8rem;
+        text-transform: uppercase;
+        font-family: 'Oswald',sans-serif; }
+        .site-footer .contenedor .informacion h3 span,
+        .site-footer .contenedor .redes-sociales h3 span,
+        .site-footer .contenedor .menu h3 span {
+          color: #fe4918; }
+    .site-footer .contenedor .redes-sociales ul li {
+      list-style: none; }
+      .site-footer .contenedor .redes-sociales ul li span {
+        color: #fe4918; }
+    .site-footer .contenedor .menu .redes-sociales {
+      display: flex;
+      justify-content: left;
+      padding: 0; }
+      .site-footer .contenedor .menu .redes-sociales a {
+        font-size: 3rem;
+        margin-top: 2rem;
+        margin-right: 2rem;
+        color: #fff; }
+  .site-footer .copyright {
+    background-color: #2e2e2e;
+    color: #fff;
+    padding: 1rem 0;
+    margin-top: 2rem; }
 
 /*# sourceMappingURL=main.css.map */

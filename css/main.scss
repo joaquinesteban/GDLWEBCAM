@@ -468,10 +468,7 @@ header{
 }
 
 // SECCION CONTADOR
-.contador::before{
-    content: '';
-    
-}
+
 
 .contador{
     width: 100%;
@@ -751,12 +748,12 @@ header{
     width: 100%;
     height: auto;
     position: relative;
-    margin-bottom: 30rem;
+    // margin-bottom: 30rem;
     font-family: 'lato' sans-serif;
   
     .background{
         width: 100%;
-        height: 45rem;
+        height:45rem;
         background-image: url(../img/bg-newsletter.jpg);
         background-position: center;
         background-repeat: no-repeat;
@@ -805,3 +802,145 @@ header{
     }
 }
 
+// seccion relog
+
+.relog{
+    width: 100%;
+    height: 40rem;
+    position: relative;
+   
+
+    h3{
+        font-size: 4rem;
+        @include titulo()
+    }
+
+    h3::after{
+        @include separador()
+    }
+
+
+
+        .cuenta-regresiva{
+            position: absolute;
+            top: 4.5rem;
+            left: 2rem;
+            
+            
+    
+            .time{
+                padding: 8rem;
+                margin-bottom: 4rem;
+                display: flex;
+                justify-content: space-between;
+    
+                li{
+                    width: 100%;
+                    font-size: 2rem;
+                    font-weight: bold;
+                    text-align: center;
+                    text-transform: uppercase;
+                    list-style: none;
+                    color: #000;
+                    font-size: 2.4rem;
+                    font-family: 'Oswald',sans-serif;
+                   
+    
+                    
+                    @media (min-width: 768px ){
+                        width: 50%;
+                    }
+    
+                    .numero{  
+                        display: block;
+                        margin-bottom: 3rem;
+                        font-size: 10rem;
+                        color: #fe4918;   
+                    }
+
+                   
+                   
+                }
+            }
+    
+            @include contenedor()
+        }
+    
+}
+
+// SECCION DE FOOTER
+
+.site-footer{
+    width: 100%;
+    height: auto;
+    background-color: #353535;
+    padding-top:2rem;
+
+    .contenedor{
+        display: flex;
+        justify-content: space-between;
+        
+        .informacion,
+        .redes-sociales,
+        .menu{
+            width: 40rem;
+            font-size: 1.2rem;
+            font-family: 'Lato',sans-serif;
+            line-height: 3rem;
+            padding: 0 2rem;
+            color: #fff;
+
+            h3{
+                font-size: 1.8rem;
+                text-transform: uppercase;
+                font-family: 'Oswald',sans-serif;
+                
+                span{
+                    color: #fe4918;
+                }
+            }
+        }
+
+        .redes-sociales{
+            ul{
+                li{
+                    list-style: none;
+
+                    span{
+                        color: #fe4918;
+                    }
+                }
+            }
+        }
+
+        .menu{
+
+            .redes-sociales{
+                display: flex;
+                justify-content: left;
+                padding: 0;
+
+                a{
+                    font-size: 3rem;
+                    margin-top: 2rem ;
+                    margin-right: 2rem;
+                    color: #fff;
+                   
+                }
+            }
+        }
+
+        
+
+
+        @include contenedor()
+    }
+
+    .copyright{
+        background-color: #2e2e2e;
+        color: #fff;
+        padding: 1rem 0;
+        margin-top: 2rem;
+        
+    }
+}
