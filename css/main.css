@@ -280,6 +280,9 @@ header {
       text-transform: uppercase;
       transition: all .5s ease-in-out; }
 
+.contador::before {
+  content: ''; }
+
 .contador {
   width: 100%;
   height: 50rem;
@@ -292,18 +295,17 @@ header {
   filter: brightness(0.8);
   position: relative; }
   .contador .contenedor {
-    background-color: #fe4a1879;
     position: absolute;
     top: 4.5rem;
     left: 2rem;
     width: 96%;
     margin: 0 auto; }
     .contador .contenedor .resumen-evento {
-      padding: 12rem 0;
+      padding: 12rem;
       display: flex;
       justify-content: space-between; }
       .contador .contenedor .resumen-evento li {
-        width: 50%;
+        width: 100%;
         font-size: 2rem;
         font-weight: bold;
         text-align: center;
@@ -314,11 +316,198 @@ header {
         font-family: 'Oswald',sans-serif; }
         @media (min-width: 768px) {
           .contador .contenedor .resumen-evento li {
-            width: 25%; } }
+            width: 50%; } }
         .contador .contenedor .resumen-evento li .numero {
           display: block;
           margin-bottom: 3rem;
           font-size: 10rem;
           color: #fe4918; }
+
+.precios {
+  width: 100%;
+  height: auto; }
+  .precios h2 {
+    font-size: 4rem;
+    font-family: 'Oswald', sans-serif;
+    text-transform: uppercase;
+    text-align: center;
+    padding: 2rem 0;
+    margin-top: 4rem; }
+  .precios h2::after {
+    content: '';
+    display: block;
+    width: 8rem;
+    height: 3rem;
+    margin: 0 auto;
+    background-image: url(../img/separador.png);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover; }
+  .precios .card-price {
+    display: flex;
+    justify-content: center; }
+    .precios .card-price .card {
+      width: 30rem;
+      height: 35rem;
+      padding: 2rem;
+      margin: 4rem;
+      border: solid #fe4918 2px;
+      font-size: 1.5rem;
+      font-family: 'Oswald',sans-serif;
+      text-align: center;
+      text-transform: uppercase;
+      transition: all .3s ease; }
+      .precios .card-price .card .price {
+        font-size: 6rem; }
+      .precios .card-price .card p {
+        margin-bottom: 2rem; }
+      .precios .card-price .card .text::before {
+        font-family: 'FontAwesome';
+        content: '\f00c';
+        display: inline-block;
+        font-size: 2rem;
+        padding: 0 0.5rem;
+        color: #018b01; }
+      .precios .card-price .card a {
+        display: inline-block;
+        width: 18rem;
+        height: 6rem;
+        border: solid #fe4918 0.2rem;
+        color: #fe4918;
+        font-size: 2rem;
+        line-height: 5rem;
+        text-align: center;
+        text-decoration: none; }
+    .precios .card-price .card:hover {
+      transform: scale(1.1);
+      border: solid 1px #fe4918;
+      box-shadow: 0px 0px 50px #666; }
+    .precios .card-price .card-2 {
+      width: 35rem;
+      height: 40rem; }
+      .precios .card-price .card-2 .titulo-h3 {
+        font-size: 2rem;
+        color: #fe4918;
+        margin-bottom: 1rem; }
+      .precios .card-price .card-2 a {
+        background-color: #fe4918;
+        color: #f2f2f2; }
+    .precios .card-price .card-3, .precios .card-price .card-1 {
+      margin-top: 7rem;
+      border: solid #e1e1e1; }
+      .precios .card-price .card-3 .titulo-h3, .precios .card-price .card-1 .titulo-h3 {
+        font-size: 2rem;
+        color: #fe4918;
+        margin-bottom: 1rem; }
+
+.mapa {
+  height: 30rem;
+  background-color: midnightblue; }
+
+.testimonio h2 {
+  font-size: 4rem;
+  font-family: 'Oswald', sans-serif;
+  text-transform: uppercase;
+  text-align: center;
+  padding: 2rem 0;
+  margin-top: 4rem; }
+.testimonio h2::after {
+  content: '';
+  display: block;
+  width: 8rem;
+  height: 3rem;
+  margin: 0 auto;
+  background-image: url(../img/separador.png);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover; }
+.testimonio .testimonial {
+  display: flex;
+  justify-content: space-around; }
+  .testimonio .testimonial blockquote {
+    width: 40rem;
+    height: auto;
+    padding: 2rem;
+    margin-bottom: 8rem;
+    background-color: #fff;
+    border: solid 3px #e1e1e1;
+    font-family: 'Lato',sans-serif;
+    position: relative; }
+    .testimonio .testimonial blockquote p {
+      font-size: 1.5rem;
+      line-height: 2.8rem;
+      padding-left: 5rem; }
+    .testimonio .testimonial blockquote p::before {
+      font-size: 3rem;
+      font-family: 'FontAwesome';
+      content: '\f10d';
+      display: inline-block;
+      color: #fe4918;
+      position: absolute;
+      left: 2rem;
+      top: 1rem; }
+    .testimonio .testimonial blockquote .info-testimonial {
+      display: flex;
+      justify-content: left;
+      align-items: center;
+      margin-top: 2rem; }
+      .testimonio .testimonial blockquote .info-testimonial img {
+        width: 8rem;
+        margin-right: 2rem;
+        border-radius: 100%; }
+      .testimonio .testimonial blockquote .info-testimonial cite {
+        display: block;
+        font-size: 1.5rem;
+        font-weight: bold;
+        text-transform: uppercase;
+        text-align: left;
+        line-height: 3rem;
+        color: #fe4918; }
+        .testimonio .testimonial blockquote .info-testimonial cite span {
+          display: block;
+          text-transform: none;
+          color: #000; }
+
+.newsletter {
+  width: 100%;
+  height: auto;
+  position: relative;
+  margin-bottom: 30rem;
+  font-family: 'lato' sans-serif; }
+  .newsletter .background {
+    width: 100%;
+    height: 45rem;
+    background-image: url(../img/bg-newsletter.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    filter: brightness(0.6); }
+  .newsletter .contenido {
+    font-size: 5rem;
+    color: #fff;
+    font-family: 'Oswald', sans-serif;
+    text-align: center;
+    position: absolute;
+    top: 20%;
+    left: 33%; }
+    .newsletter .contenido p {
+      font-size: 2rem; }
+    .newsletter .contenido h3 {
+      font-size: 10rem;
+      font-weight: bold;
+      text-transform: uppercase; }
+    .newsletter .contenido .button {
+      display: inline-block;
+      color: #fff;
+      width: 20rem;
+      margin-top: 4rem;
+      padding: 1rem;
+      font-size: 2rem;
+      text-decoration: none;
+      text-transform: uppercase;
+      border: solid 2px #fff; }
+    .newsletter .contenido .button:hover {
+      background-color: #fe4918;
+      transition: all  1s ease; }
 
 /*# sourceMappingURL=main.css.map */
