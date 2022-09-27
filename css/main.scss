@@ -185,7 +185,7 @@ header{
             
 
             a{  
-               
+                
                 text-decoration: none;
                 text-transform: uppercase;
                 margin-right: 3rem;
@@ -194,15 +194,15 @@ header{
 
                              
                 &:last-child{
-                    color:#fff;
-                    border: 3px solid #fe4918;
+                    
+                    
+                    border: 2px solid #fe4918;
                     margin: 0;
-                    padding: 2rem;
+                    padding: 1rem;
                 }
 
                 &:hover{
-                    background-color: #fe4918;
-                    padding: 1rem;
+                    color: #fe4918;
                     transition: 0.8s;
                 }  
 

@@ -92,13 +92,11 @@ header {
       font-size: 1.6rem;
       color: #fff; }
       .barra .contenedor .navegacion-principal a:last-child {
-        color: #fff;
-        border: 3px solid #fe4918;
+        border: 2px solid #fe4918;
         margin: 0;
-        padding: 2rem; }
+        padding: 1rem; }
       .barra .contenedor .navegacion-principal a:hover {
-        background-color: #fe4918;
-        padding: 1rem;
+        color: #fe4918;
         transition: 0.8s; }
     @media (max-width: 768px) {
       .barra .contenedor .navegacion-principal {
