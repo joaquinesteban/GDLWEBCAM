@@ -603,4 +603,164 @@ header {
     padding: 1rem 0;
     margin-top: 2rem; }
 
+.formulario {
+  width: 100%;
+  height: auto; }
+  .formulario h2 {
+    font-size: 3rem;
+    font-family: 'Oswald', sans-serif;
+    text-transform: uppercase;
+    text-align: center;
+    padding: 2rem 0;
+    margin-top: 4rem; }
+  .formulario h2::after {
+    content: '';
+    display: block;
+    width: 8rem;
+    height: 3rem;
+    margin: 0 auto;
+    background-image: url(../img/separador.png);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover; }
+  .formulario .registro {
+    background-color: #fff;
+    width: 96%;
+    margin: 0 auto; }
+    .formulario .registro .caja {
+      display: flex;
+      justify-content: center;
+      padding: 4rem 0 4rem 0; }
+      .formulario .registro .caja .campo {
+        margin-left: 3rem; }
+        .formulario .registro .caja .campo label {
+          font-size: 2rem; }
+        .formulario .registro .caja .campo input {
+          width: 30rem;
+          height: 3rem; }
+  .formulario .paquetes h3 {
+    font-size: 2rem;
+    margin: 0;
+    text-align: center;
+    text-transform: uppercase; }
+  .formulario .paquetes .precios .card:hover {
+    transform: none;
+    box-shadow: 0px 0px 30px  #666; }
+  .formulario .eventos {
+    width: 96%;
+    margin: 0 auto; }
+    .formulario .eventos h3 {
+      font-size: 3rem;
+      font-family: 'Oswald', sans-serif;
+      text-transform: uppercase;
+      text-align: center;
+      padding: 2rem 0;
+      margin-top: 4rem; }
+    .formulario .eventos h3::after {
+      content: '';
+      display: block;
+      width: 8rem;
+      height: 3rem;
+      margin: 0 auto;
+      background-image: url(../img/separador.png);
+      background-repeat: no-repeat;
+      background-position: center;
+      background-size: cover; }
+    .formulario .eventos .contenedor h4 {
+      display: block;
+      width: 130rem;
+      margin: 0 auto;
+      padding: 1rem;
+      font-size: 2.2rem;
+      text-align: center;
+      text-transform: uppercase;
+      border-bottom: 2px solid #fe4918; }
+    .formulario .eventos .contenedor .contenido_dia {
+      width: 100%;
+      height: 22rem;
+      display: flex;
+      justify-content: space-around; }
+      .formulario .eventos .contenedor .contenido_dia div {
+        margin-top: 2rem; }
+        .formulario .eventos .contenedor .contenido_dia div p {
+          font-size: 2rem;
+          padding-bottom: 1rem; }
+        .formulario .eventos .contenedor .contenido_dia div label {
+          display: block;
+          font-size: 1.4rem;
+          margin-bottom: 1rem; }
+          .formulario .eventos .contenedor .contenido_dia div label input {
+            margin-right: 0.6rem; }
+          .formulario .eventos .contenedor .contenido_dia div label time {
+            color: #fe4918;
+            padding-right: 0.5rem; }
+  .formulario .resumen {
+    width: 100%;
+    height: 50rem; }
+    .formulario .resumen h3 {
+      font-size: 3rem;
+      font-family: 'Oswald', sans-serif;
+      text-transform: uppercase;
+      text-align: center;
+      padding: 2rem 0;
+      margin-top: 4rem; }
+    .formulario .resumen h3::after {
+      content: '';
+      display: block;
+      width: 8rem;
+      height: 3rem;
+      margin: 0 auto;
+      background-image: url(../img/separador.png);
+      background-repeat: no-repeat;
+      background-position: center;
+      background-size: cover; }
+    .formulario .resumen .caja {
+      display: flex;
+      justify-content: space-around; }
+      .formulario .resumen .caja .extras .orden label {
+        display: block;
+        font-size: 2rem;
+        padding-bottom: 1rem; }
+      .formulario .resumen .caja .extras .orden input {
+        width: 40rem;
+        height: 2.2rem;
+        margin-bottom: 1rem; }
+      .formulario .resumen .caja .extras .orden select {
+        width: 20rem;
+        height: 2.2rem;
+        margin-bottom: 1rem; }
+      .formulario .resumen .caja .extras .button {
+        display: block;
+        width: 18rem;
+        height: 6rem;
+        margin: 2rem auto 0 auto;
+        border: solid #fe4918 0.2rem;
+        color: #fff;
+        background-color: #fe4918;
+        font-size: 2rem;
+        line-height: 5rem;
+        text-align: center;
+        text-decoration: none;
+        text-transform: uppercase; }
+      .formulario .resumen .caja .extras .button:hover {
+        cursor: pointer; }
+  .formulario .total p {
+    font-size: 1.6rem;
+    padding-bottom: 2rem; }
+  .formulario .total .button {
+    display: block;
+    width: 18rem;
+    height: 6rem;
+    margin: 2rem auto 0 auto;
+    border: solid #fe4918 0.2rem;
+    color: #fff;
+    background-color: #fe4918;
+    font-size: 2rem;
+    line-height: 5rem;
+    text-align: center;
+    text-decoration: none;
+    text-transform: uppercase; }
+  .formulario .total .button:hover {
+    cursor: pointer; }
+
 /*# sourceMappingURL=main.css.map */
